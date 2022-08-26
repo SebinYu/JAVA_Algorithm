@@ -1,6 +1,6 @@
 package stringLength;
 
-//import java.util.*;
+import java.util.*;
 //class StringLengthMax {
 //    public String solution(String str){
 //        String answer="";
@@ -34,12 +34,13 @@ class StringLengthMax {
     public String solution(String str){
         String answer="";
         int maxLength =Integer.MIN_VALUE, spaceIndex;
-        while((spaceIndex =str.indexOf(' '))!=-1){
-            String stringTmp=str.substring(0, spaceIndex);
-            int lenTmp= stringTmp.length();
+
+        while((spaceIndex = str.indexOf(' ')) != -1){
+            String wordTmp = str.substring(0, spaceIndex);
+            int lenTmp= wordTmp.length();
             if(lenTmp>maxLength){
                 maxLength=lenTmp;
-                answer=stringTmp;
+                answer = wordTmp;
             }
             str=str.substring(spaceIndex+1);
         }
