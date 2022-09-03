@@ -5,7 +5,7 @@ import java.util.Arrays;
 public class Practice2 {
     //배열
     //같은 내용_첫 인덱스번호로 뒤에 연결되는 인덱스 번호 변경
-    //중복 중 뒤에 붙이는 문자열에서 중복부분 제거하고 -> 인덱스 번호 증가시키고 붙이기
+    //중복 중 뒤에 붙이는 문자열에서 중복부분 제거하고 -> 붙이기
     public synchronized static void main(String[] args) {
         String[] s1 = {"A","x","A"};
         String[] s2 = {"A","y","A"};
